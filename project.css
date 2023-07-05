@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+/* TOP */
+#top{
+    background: url('images/bg-hero-desktop.svg'), hsl(193, 100%, 96%);
+}
+a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 50px;
+    /* background-color: hsl(193, 100%, 96%); */
+}
+.logo{
+    width: 200px;
+}
+.head-button{
+    font-family: 'open Sans';
+    font-weight: 700;
+    color: hsl(192, 100%, 9%);
+    border-radius: 30px;
+    padding: 7px 50px 11px;
+    box-shadow: 1px 1px 9px hsl(0, 0%, 82%);
+    background-color: #fff;
+}
+
+/* INTRODUCTION */
+.introduction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 50px;
+    padding-bottom: 50px;
+    /* background-color: hsl(193, 100%, 96%); */
+}
+
+/* left-intro */
+.left-intro{
+    width: 38%;
+}
+.heading{
+    color: hsl(192, 100%, 9%);
+}
+.intro-heading{
+    width: 80%;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 35px;
+}
+.intro-paragraph{
+    width: 95%;
+    margin: 20px 0 50px;
+    color: hsl(192, 100%, 9%);
+}
+.button{
+    color: #fff;
+    background-color: hsl(322, 100%, 66%);
+    padding: 16px 60px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+/* screen mockup */
+.screens{
+    width: 50%;
+    margin-left: 60px;
+}
+
+/* ILLUSTRATION SECTION */
+.illustration{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 30px 50px 100px;
+    width: 90%;
+    margin: 0 auto 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #cbcbcb;
+}
+
+.ill-image{
+    width: 35%;
+}
+
+/* span */
+.illustration-span{
+    width: 50%;
+}
+
+.span-title{
+    font-size: 28px;
+    font-family: 'Poppins';
+    margin-bottom: 10px;
+}
+.span-paragraph{
+    font-size: 18px;
+    color: hsl(208, 11%, 55%);
+}
+
+/* users */
+.users-span{
+    width: 48%;
+}
+
+/* outro */
+.outro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 35vh;
+    width: 55%;
+    margin: auto;
+    box-shadow: 0.1px 0.1px 5px #cbcbcb;
+    border-radius: 10px;
+    position: relative;
+    bottom: -80px;
+    background-color: #fff;
+}
+.outro-heading{
+    font-family: 'Poppins';
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 30px;
+}
+.outro-button{
+    box-shadow: 0 5px 10px #cfcfcf;
+}
+
+/* CONTACT SECTION */
+.contact{
+    background-color: hsl(192, 100%, 9%);
+    color: #fff;
+    padding: 130px 60px 50px 80px;
+}
+.main-contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 170px;
+}
+.contact-left{
+    width: 40%;
+}
+.icon{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.icon img{
+    position: relative;
+    top: 5px;
+}
+.contact-logo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-logo h1{
+    font-family: 'Poppins';
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.icon p{
+    margin-left: 15px;
+}
+
+/* contact-right */
+.contact-right{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+li{
+    list-style-type: none;
+}
+
+.contact-link{
+    line-height: 2;
+}
+
+.fa-brands{
+    border: 1px solid #fff;
+    padding: 7px;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.fa-facebook-f{
+    padding: 7px 10px;
+}
+.fa-instagram{
+    padding: 7px 8px;
+}
+
+.copyright{
+    text-align: end;
+}
+
+/* active state */
+.head-button:hover{
+    color: hsl(208, 11%, 55%);
+}
+.button:hover{
+    opacity: 50%;
+}
+.contact-link:hover{
+    text-decoration: underline;
+}
+.fa-brands:hover{
+    color: hsl(322, 100%, 66%);
+    border: 1px solid hsl(322, 100%, 66%);
+}
+
+
+/* MOBILE SCREEN STYLING */
+@media(max-width: 500px){
+    #top{
+        background: url('images/bg-hero-mobile.svg'), hsl(193, 100%, 96%);
+    }
+header{
+    padding: 25px 15px;
+}
+.logo{
+    width: 100px;
+}
+.head-button{
+    font-size: 11px;
+    padding: 5px 20px;
+}
+
+/* INTRODUCTION */
+.introduction{
+    flex-direction: column;
+    margin: 50px 20px 30px;
+}
+
+/* left-intro */
+.left-intro{
+    width: 100%;
+}
+.intro-heading{
+    width: 95%;
+    text-align: center;
+    font-size: 27px;
+    margin: 10px auto;
+}
+.intro-paragraph{
+    text-align: center;
+    margin: 15px auto 45px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.intro-button{
+    text-align: center;
+    margin: auto;
+    display: block;
+    width: 80%;
+}
+
+/* screen mockup */
+.screens{
+    width: 90%;
+    margin: 70px auto 0;
+}
+
+/* ILLUSTRATION SECTION */
+.illustration{
+    flex-direction: column-reverse;
+    width: 90%;
+    padding: 60px 0 30px;
+    border-radius: 17px;
+}
+.convo{
+    flex-direction: column;
+}
+.ill-image{
+    width: 70%;
+}
+
+/* span */
+.illustration-span{
+    width: 74%;
+    margin: 60px auto 10px;
+}
+.span-title{
+    font-weight: 600;
+    text-align: center;
+    font-size: 22px;
+}
+.span-paragraph{
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.users-span{
+    width: 70%;
+}
+
+/* outro */
+.outro{
+    height: 23vh;
+    width: 90%;
+    border-radius: 15px;
+}
+.outro-heading{
+    font-size: 18px;
+}
+.outro-button{
+    font-size: 12px;
+    padding: 12px 50px;
+}
+
+/* CONTACT */
+.contact{
+    padding: 150px 20px 70px;
+}
+.main-contact{
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0;
+}
+.contact-left{
+    width: 95%;
+
+}
+.contact-logo img{
+    width: 37px;
+}
+.contact-logo h1{
+    font-size: 35px;
+    margin-left: 8px;
+}
+.icon{
+    margin-bottom: 25px;
+}
+.location{
+    margin-left: 9px;
+}
+.icon p{
+    margin-left: 25px;
+    font-weight: 400;
+}
+.contact-right{
+    flex-direction: column;
+    width: 100%;
+    margin: 35px 0 25px;
+}
+.more:last-of-type{
+    margin-bottom: 50px;
+}
+.contact-link{
+    line-height: 2.6;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 0.3px;
+}
+.socials{
+    margin: auto;
+}
+.copyright{
+    font-size: 12px;
+    text-align: center;
+}
+}
